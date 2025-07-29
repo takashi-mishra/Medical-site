@@ -2,41 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* SmartCare Hospital Design System - Professional Medical Theme
+All colors MUST be HSL for consistency and theming support.
 */
 
 @layer base {
   :root {
+    /* Core Brand Colors - Medical Blue Theme */
     --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 215 25% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 25% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 25% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary - Medical Blue */
+    --primary: 210 85% 35%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 210 85% 30%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Clean Gray */
+    --secondary: 210 15% 96%;
+    --secondary-foreground: 215 25% 15%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Medical Accent - Wellness Green */
+    --medical-accent: 145 60% 45%;
+    --medical-accent-foreground: 0 0% 98%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Trust Blue - Lighter medical blue */
+    --trust: 210 75% 50%;
+    --trust-foreground: 0 0% 98%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --muted: 210 15% 96%;
+    --muted-foreground: 215 15% 45%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --accent: 210 15% 96%;
+    --accent-foreground: 215 25% 15%;
 
-    --radius: 0.5rem;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 20% 90%;
+    --input: 210 20% 95%;
+    --ring: 210 85% 35%;
+
+    --radius: 0.75rem;
+
+    /* Medical Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(210 85% 35%), hsl(210 75% 50%));
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 15% 98%));
+    --gradient-accent: linear-gradient(120deg, hsl(145 60% 45%), hsl(145 50% 55%));
+
+    /* Shadows for depth */
+    --shadow-medical: 0 4px 20px -2px hsl(210 85% 35% / 0.1);
+    --shadow-card: 0 2px 10px -1px hsl(210 20% 50% / 0.08);
+    --shadow-hover: 0 8px 30px -4px hsl(210 85% 35% / 0.15);
+
+    /* Animation Variables */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --sidebar-background: 0 0% 98%;
 
